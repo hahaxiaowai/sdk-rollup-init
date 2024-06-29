@@ -1,6 +1,6 @@
 {
   "name": "sdk-rollup-init",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "库初始框架",
   "main": "rollup.config.js",
   "type": "module",
@@ -11,6 +11,10 @@
     "js",
     "rollup"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hahaxiaowai/sdk-rollup-init.git"
+  },
   "author": "night tea",
   "license": "ISC",
   "devDependencies": {
