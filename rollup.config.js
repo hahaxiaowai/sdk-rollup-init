@@ -5,13 +5,14 @@ import terser from '@rollup/plugin-terser';
 import { uglify } from 'rollup-plugin-uglify';
 import { obfuscator } from 'rollup-obfuscator';
 import commonjs from '@rollup/plugin-commonjs';
+import pkg from "./package.json" assert { type: "json" };
 
 export default {
   input: 'src/index.js',
   output: {
-    file: 'package.umd.js',
+    file: `dist/${pkg.name}.js`,
     format: 'umd',
-    name: 'package',
+    name: `${pkg.name}`,
   },
   plugins: [
     commonjs(),
